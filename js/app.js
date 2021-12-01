@@ -55,6 +55,11 @@ const isInViewport = (el) => {
     rect.right <= window.innerWidth
   );
 };
+
+const goToSection = (dest) => {
+  const destNode = document.querySelector(`[data-nav='${dest}']`);
+  destNode.scrollIntoView({ behavior: "smooth" });
+};
 /**
  * End Helper Functions
  * Begin Main Functions
@@ -77,7 +82,8 @@ const setupMenuOject = () => {
 //Iterate through menu object and build menu
 const setupMenu = (menuTextAndIds) => {
   for (const [key, value] of Object.entries(menuTextAndIds)) {
-    let menuLink = `<a href="#${value}" class="menu__link">${key}</a>`;
+    // let menuLink = `<a href="#${value}" class="menu__link">${key}</a>`;
+    let menuLink = `<a href="javascript:void(0);" class="menu__link"  onclick="goToSection('${key}')">${key}</a>`;
 
     //create li elemant with menu text
     let li = document.createElement("li");
