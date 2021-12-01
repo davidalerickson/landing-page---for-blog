@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <button onclick="topFunction()" id="btnTop" title="Go to top">top</button>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+
+  <div class="navbar">
+    <div class="home" onclick="topFunction()">
+      <img src="./img/svg/house-user.svg" class="home-icon" alt="Home Icon" />
+    </div>
+    <div>
+      <nav class="nav-menu">
+        <ul id="navbar__list"></ul>
+      </nav>
+    </div>
+    <div></div>
+  </div>
+  <main>
+    <header class="main__hero">
+      <div class="hero__box">
+        <img id="hero__img" src="./img/me.png" alt="" />
+        <h1 class="hero__text">david erickson</h1>
+        <p>
+          david erickson - HTML - david erickson - CSS - david erickson - Javascript - 
+          david erickson - Svelte - david erickson - React - david erickson - Gatsby
+          david erickson - Photoshop - david erickson- Illustrator - david erickson
+          Premiere - david erickson - After Effects - david erickson - HTML - david erickson - CSS - david erickson -
+          Javascript - david erickson - Svelte - david erickson - React - david erickson - Gatsby
+          david erickson - Photoshop - david erickson- Illustrator - david erickson
+          Premiere - david erickson - After Effects - david erickson - HTML - david erickson - CSS - david erickson -
+          Javascript - david erickson - Svelte - david erickson - React - david erickson - Gatsby
+          david erickson - Photoshop - david erickson- Illustrator - david erickson
+          Premiere - david erickson - After Effects
+        </p>
+      </div>
+    </header>
+    <section id="section1" data-nav="bio" class="your-active-class">
+      <div class="landing__container">
+        <h2>bio</h2>
+        <div class="card">
+          <h3><q>Design and Technology are my Passion</q></h3>
+          <p>
+            I have 30 years of software and technology experience. I led a team of support engineers at Microsoft from
+            1989 to 1994. I cofounded Wirefrog, a freelanceing business focusing on web site design and multimedia.
+            Starting in 2004 I moved to Brazil and became a coconut farmer. Upon returning to the United States in 2014
+            I
+            decided to study modern web developement and have taken bootcamp style courses as well as courses
+            specializing in
+            React, Gatsby, Svelte and other frameworks. I am also skilled in digital media preparation and production.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="section2" class="your-active-class" data-nav="skills">
+      <div class="landing__container">
+        <h2>skills</h2>
+        <div class="card">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            fermentum metus faucibus electus pharetra dapibus. Suspendisse
+            potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
+            lacinia ex. Phasellus imperdiet porta orci eget mollis.
+          </p>
+          <div class="right-list">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Svelte</li>
+            </ul>
+          </div>
+          <P>
+            Sed
+            convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla
+            eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam
+            nunc eu augue. Pellentesque maximus imperdiet elit a pharetra.
+            Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi
+            a tincidunt felis. Sed leo nunc, pharetra et elementum non,
+            faucibus vitae elit. Integer nec libero venenatis libero ultricies
+            molestie semper in tellus. Sed congue et odio sed euismod.
+          </p>
+          </P>
+        </div>
+      </div>
+    </section>
+    <section id="section3" data-nav="education" class="your-active-class">
+      <div class="landing__container">
+        <h2>Education</h2>
+        <div class="card">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            fermentum metus faucibus lectus pharetra dapibus. Suspendisse
+            potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
+            lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed
+            convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla
+            eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam
+            nunc eu augue. Pellentesque maximus imperdiet elit a pharetra.
+            Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi
+            a tincidunt felis. Sed leo nunc, pharetra et elementum non,
+            faucibus vitae elit. Integer nec libero venenatis libero ultricies
+            molestie semper in tellus. Sed congue et odio sed euismod.
+          </p>
+          <p>
+            Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar
+            gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam.
+            Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum
+            consectetur porttitor. Suspendisse imperdiet porttitor tortor,
+            eget elementum tortor mollis non.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="section4" data-nav="hobbies" class="your-active-class">
+      <div class="landing__container">
+        <h2>Hobbies</h2>
+        <div class="card">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            fermentum metus faucibus lectus pharetra dapibus. Suspendisse
+            potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
+            lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed
+            convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla
+            eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam
+            nunc eu augue. Pellentesque maximus imperdiet elit a pharetra.
+            Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi
+            a tincidunt felis. Sed leo nunc, pharetra et elementum non,
+            faucibus vitae elit. Integer nec libero venenatis libero ultricies
+            molestie semper in tellus. Sed congue et odio sed euismod.
+          </p>
+          <p>
+            Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar
+            gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam.
+            Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum
+            consectetur porttitor. Suspendisse imperdiet porttitor tortor,
+            eget elementum tortor mollis non.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------end Contact Section--------------------- -->
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-icons">
+      <li>
+        <a href="#footer">
+          <div class="icon">
+            <img src="./img/svg/facebook-square.svg" alt="Facebook Icon" />
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#footer">
+          <div class="icon">
+            <img src="./img/svg/instagram-square.svg" alt="Instagram Icon" />
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#footer">
+          <div class="icon">
+            <img src="./img/svg/twitter-square.svg" alt="Twitter Icon" />
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/davidalerickson/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BTA9rNjLrTVmempdajD5xZw%3D%3D">
+          <div class="icon">
+            <img src="./img/svg/linkedin.svg" alt="LinkedIn Icon" />
+          </div>
+        </a>
+      </li>
+    </ul>
+    <p>&copy;2021 GoGoByeBye and David Erickson. All rights reserved</p>
+  </footer>
+</body>
+
+</html>
+<script src="./js/app.js"></script>
