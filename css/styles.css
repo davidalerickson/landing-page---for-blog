@@ -17,7 +17,7 @@
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   width: 100%;
 }
 
@@ -98,7 +98,7 @@ main {
 
 section {
   position: relative;
-  min-height: 50vh;
+  min-height: 85vh;
 }
 
 .card {

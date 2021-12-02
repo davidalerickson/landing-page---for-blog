@@ -75,7 +75,6 @@ const setupMenuOject = () => {
   for (const [key, value] of Object.entries(sections)) {
     tempObject[value.dataset.nav] = value.id;
   }
-  // console.log(tempObject);
   return tempObject;
 };
 
@@ -104,9 +103,10 @@ const setupMenu = (menuTextAndIds) => {
  *
  */
 
-// Add Scroll events to document to detect when section is in viewport and update classes of menu items
+// Add Scroll events to document to detect when section is in viewport and update classes of menu items and sections
 const setupScrollEventListeners = (numItems) => {
   for (let i = 0; i < numItems; i++) {
+    const sectionNodeInViewport = document.querySelectorAll("section")[i];
     document.addEventListener("scroll", () => {
       if (
         isInViewport(menuItemNodes.item(i).firstElementChild.firstElementChild)
@@ -114,10 +114,12 @@ const setupScrollEventListeners = (numItems) => {
         menuNode.childNodes
           .item(i)
           .children[0].classList.add("activeMenuItem", "in-viewport");
+        sectionNodeInViewport.classList.add("your-active-class");
       } else {
         menuNode.childNodes
           .item(i)
           .children[0].classList.remove("activeMenuItem", "in-viewport");
+        sectionNodeInViewport.classList.remove("your-active-class");
       }
     });
   }
